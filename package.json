@@ -1,0 +1,16 @@
+{
+  "name": "bundle.test",
+  "version": "1.0.0",
+  "description": "Сборка бандлов",
+  "main": "src/index.js",
+  "scripts": {
+    "cars": "FILE_NAME=cars.js WITH_CARS=1 webpack --mode development",
+    "admins": "FILE_NAME=admins.js WITH_CARS=1 WITH_ADMINS=1 webpack --mode development"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-conditional-loader": "^1.0.12"
+  }
+}
